@@ -29,6 +29,10 @@ ul {
   justify-content: center;
 }
 
+.leaflet-bottom{
+  visibility: hidden;
+}
+
 .leaflet-container{
   height: 100vh;
   width: 80vw;
