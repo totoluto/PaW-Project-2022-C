@@ -1,24 +1,37 @@
 .App {
-  text-align: center;
-  display: flex;
+    display: flex;
   flex-direction: row;
   height: 100vh;
+  background-color: #222323;
 }
 
 .App-nav{
-  background-color: rgb(18,25,35);
+  background-color: #1A1919;
   width: 20vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .Navlink {
   color: white;
   text-decoration: none;
   list-style-type: none;
-  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.Navlink:hover{
+  color: darkgrey;
 }
 
 ul {
   padding: 0;
+}
+
+li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-bottom: #222323 solid 1px;
 }
 
 .Error {
@@ -27,6 +40,7 @@ ul {
   margin: 50px;
   align-items: center;
   justify-content: center;
+  color:white;
 }
 
 .leaflet-bottom{
