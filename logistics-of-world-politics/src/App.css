@@ -6,10 +6,19 @@
 }
 
 .App-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #1A1919;
   width: 20vw;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.footer{
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
 }
 
 .Navlink {

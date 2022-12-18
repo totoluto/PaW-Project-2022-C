@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Map from "./Sites/Map";
 import Error from "./Sites/Error";
+import Gibraltar from "./Sites/Gibraltar";
 
 function App() {
   return(
@@ -18,13 +19,14 @@ function App() {
                       <Link to="/hormus" className={"Navlink"}><li className="App-li-nav">Strasse von Hormus</li></Link>
                       <Link to="/malakka" className={"Navlink"}><li className="App-li-nav">Strasse von Malakka</li></Link>
                   </ul>
+                  <div className={"footer"}>Logistics of world Politics</div>
               </nav>
               <div>
                   <Routes>
                       <Route path="/" element={<Map/>}/>
                       <Route path="/panamakanal" element={<Map/>}/>
                       <Route path="/magellanstrasse" element={<Map/>}/>
-                      <Route path="/gibraltar" element={<Map/>}/>
+                      <Route path="/gibraltar" element={<Gibraltar/>}/>
                       <Route path="/bosporus" element={<Map/>}/>
                       <Route path="/suezkanal" element={<Map/>}/>
                       <Route path="/hormus" element={<Map/>}/>
