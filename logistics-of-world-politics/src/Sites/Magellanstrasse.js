@@ -1,6 +1,6 @@
 import '../App.css';
 
-function Gibraltar() {
+function Magellanstrasse() {
     return(
         <div>
             Inhalt hier
@@ -8,4 +8,4 @@ function Gibraltar() {
     );
 }
 
-export default Gibraltar;
+export default Magellanstrasse;

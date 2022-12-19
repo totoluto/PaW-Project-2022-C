@@ -1,6 +1,6 @@
 import '../App.css';
 
-function Gibraltar() {
+function Hormus() {
     return(
         <div>
             Inhalt hier
@@ -8,4 +8,4 @@ function Gibraltar() {
     );
 }
 
-export default Gibraltar;
+export default Hormus;

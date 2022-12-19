@@ -3,6 +3,7 @@ import '../App.css';
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import DraggableMarker from "../Components/DebugMarker";
 import DebugMarker from "../Components/DebugMarker";
+import {Link} from "react-router-dom";
 
 function Map() {
     const panamakanal = [9.11091489121999, -79.69740089917417]
@@ -67,42 +68,57 @@ function Map() {
                 />
                 <Marker position={panamakanal}>
                     <Popup>
-                        Panamakanal
+                        Der Panamakanal ist ein künstlicher Wasserweg, der den Atlantischen Ozean mit dem Pazifischen Ozean durch Panama in Mittelamerika verbindet. Er wurde von den Vereinigten Staaten zwischen 1904 und 1914 gebaut und verkürzte die Reisezeit für Schiffe zwischen den Ost- und Westküsten von Nord- und Südamerika erheblich. <Link to="/panamakanal">Mehr lesen</Link>
                     </Popup>
                 </Marker>
                 <Marker position={magellanstrasse}>
                     <Popup>
-                        magellanstrasse
+                        Der Magellanstraße ist ein schmaler Wasserweg, der das Festland Südamerikas vom Archipel Tierra del Fuego an der Südspitze des Kontinents trennt. Sie liegt in der Patagonien-Region von Chile und Argentinien. Der Kanal wurde nach Ferdinand Magellan, dem portugiesischen Entdecker, benannt, der im Jahr 1520 während seiner Weltumsegelung als erster Europäer hindurchsegelte. <Link to="/magellanstrasse">Mehr lesen</Link>
                     </Popup>
                 </Marker>
                 <Marker position={gibraltar}>
                     <Popup>
-                        Gibraltar
+                        Der Gibraltar-Straße ist ein schmaler Wasserweg, der die Iberische Halbinsel (Spanien und Portugal) von Afrika trennt. Sie verbindet den Atlantischen Ozean mit dem Mittelmeer und hat an ihrem schmalsten Punkt eine Breite von etwa 8,7 Meilen (14 km). <Link to="/gibraltar">Mehr lesen</Link>
                     </Popup>
                 </Marker>
                 <Marker position={bosporus}>
                     <Popup>
-                        Bosporus
+                        Die Bosporus-Straße ist ein schmaler Wasserweg, der Europa und Asien trennt und Teil der Grenze zwischen dem Schwarzen Meer und dem Marmarameer bildet. Sie befindet sich in Istanbul, der Türkei, und ist etwa 50 km lang und variiert in der Breite von etwa 1,2 bis 6,5 km. <Link to="/bosporus">Mehr lesen</Link>
                     </Popup>
                 </Marker>
                 <Marker position={suezkanal}>
                     <Popup>
-                        Suezkanal
+                        Der Suezkanal ist ein künstlicher Wasserweg in Ägypten, der das Mittelmeer mit dem Roten Meer verbindet. Er wurde im 19. Jahrhundert gebaut und ist etwa 193 km lang. <Link to="/suezkanal">Mehr lesen</Link>
                     </Popup>
                 </Marker>
                 <Marker position={hormus}>
                     <Popup>
-                        Hormus
+                        Die Straße von Hormus ist ein schmaler Wasserweg im Persischen Golf, der die Arabische Halbinsel von Iran trennt. Sie ist an ihrem schmalsten Punkt etwa 34 km breit und ist eine wichtige Schifffahrtsroute, da sie der einzige Seeweg vom Golf zum offenen Ozean ist. <Link to="/hormus">Mehr lesen</Link>
                     </Popup>
                 </Marker>
                 <Marker position={malakka}>
                     <Popup>
-                        Suezkanal
+                        Die Straße von Malakka ist ein schmaler Wasserweg, der die Malaiische Halbinsel von der indonesischen Insel Sumatra trennt. Sie liegt zwischen dem Andamanischen Meer im Westen und dem Südchinesischen Meer im Osten und ist eine der belebtesten Schifffahrtsstraßen der Welt. Die Straße von Malakka ist etwa 970 km lang und variiert in der Breite von 32 bis 483 km. <Link to="/malakka">Mehr lesen</Link>
                     </Popup>
                 </Marker>
-                <Polygon positions={asiaAmerica}/>
-                <Polygon positions={asiaEurope}/>
-                <Polygon positions={europeAmerica}/>
+                <Polygon positions={asiaAmerica}>
+                    <Popup>
+                        Transportierter Wert: 15,4 TEU
+                        <br/>Gehandelte Ware: Autos, Rohöl, Computer, Pharmazeutische Produkte, TV-Geräte & Telefone
+                    </Popup>
+                </Polygon>
+                <Polygon positions={asiaEurope}>
+                    <Popup>
+                        Transportierter Wert: 17,7 TEU
+                        <br/>Gehandelte Ware: Konsumgüter, Maschinen, Ausrüstungen, Kleidung, Schuhe
+                    </Popup>
+                </Polygon>
+                <Polygon positions={europeAmerica}>
+                    <Popup>
+                        Transportierter Wert: 4,4 TEU
+                        <br/>Gehandelte Ware: Maschinen, Fahrzeuge, Chemikalien, Fertigzeugnisse
+                    </Popup>
+                </Polygon>
             </MapContainer>
         </div>
     );

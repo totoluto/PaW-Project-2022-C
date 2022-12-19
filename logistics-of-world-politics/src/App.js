@@ -3,6 +3,12 @@ import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Map from "./Sites/Map";
 import Error from "./Sites/Error";
 import Gibraltar from "./Sites/Gibraltar";
+import Panamakanal from "./Sites/Panamakanal";
+import Magellanstrasse from "./Sites/Magellanstrasse";
+import Bosporus from "./Sites/Bosporus";
+import Suezkanal from "./Sites/Suezkanal";
+import Hormus from "./Sites/Hormus";
+import Malakka from "./Sites/Malakka";
 
 function App() {
   return(
@@ -24,13 +30,13 @@ function App() {
               <div>
                   <Routes>
                       <Route path="/" element={<Map/>}/>
-                      <Route path="/panamakanal" element={<Map/>}/>
-                      <Route path="/magellanstrasse" element={<Map/>}/>
+                      <Route path="/panamakanal" element={<Panamakanal/>}/>
+                      <Route path="/magellanstrasse" element={<Magellanstrasse/>}/>
                       <Route path="/gibraltar" element={<Gibraltar/>}/>
-                      <Route path="/bosporus" element={<Map/>}/>
-                      <Route path="/suezkanal" element={<Map/>}/>
-                      <Route path="/hormus" element={<Map/>}/>
-                      <Route path="/malakka" element={<Map/>}/>
+                      <Route path="/bosporus" element={<Bosporus/>}/>
+                      <Route path="/suezkanal" element={<Suezkanal/>}/>
+                      <Route path="/hormus" element={<Hormus/>}/>
+                      <Route path="/malakka" element={<Malakka/>}/>
                       <Route path="*" element={<Error/>}/>
                   </Routes>
               </div>
