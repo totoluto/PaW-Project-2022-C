@@ -2,8 +2,8 @@ import '../App.css';
 
 function Malakka() {
     return(
-        <div>
-            Strasse von Malakka:
+        <div className="info">
+            <h1>Strasse von Malakka:</h1>
 
             Die Straße von Malakka ist eine Meerenge in Südostasien zwischen der Malaiischen Halbinsel und der Nordostküste von Sumatra. Sie verbindet die Andamanensee und das Südchinesische Meer mit der Straße von Singapur. Sie liegt vollständig über dem südostasiatischen Festlandsockel und ist somit maximal etwa 200 Meter tief.
 

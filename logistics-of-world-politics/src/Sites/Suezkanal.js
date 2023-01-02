@@ -2,8 +2,9 @@ import '../App.css';
 
 function Suezkanal() {
     return(
-        <div>
-            Suezkanal:
+        <div className="info">
+            <h1>Suezkanal:</h1>
+
 
             Der Suezkanal oder Sueskanal (benannt nach der Hafenstadt Sues; arabisch قناة السويس Qanāt as-Suwais) ist ein Schifffahrtskanal in Ägypten zwischen den Hafenstädten Port Said und Port Taufiq bei Sues, der das Mittelmeer über die Landenge von Sues (Isthmus von Sues) mit dem Roten Meer verbindet und der Seeschifffahrt zwischen Nordatlantik und Indischem Ozean den Weg um Afrika erspart. Der Kanal, der damit Teil der maritimen Seidenstraße ist, bildet die Grenze zwischen Afrika und Asien.
 
